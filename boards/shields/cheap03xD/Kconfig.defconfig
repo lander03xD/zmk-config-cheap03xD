@@ -1,4 +1,4 @@
-if SHIELD_CHEAP03xD_LEFT
+if SHIELD_CHEAP03XD_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
