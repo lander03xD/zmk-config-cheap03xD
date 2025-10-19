@@ -1,0 +1,6 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+BT1,SbM-9202_14250_battery_holder,1,Battery_Cell,
+"D1, D10, D11, D12, D13, D14, D15, D16, D17, D18, D2, D3, D4, D5, D6, D7, D8, D9",Diode_DO-35,18,Diode,
+"S1, S10, S11, S12, S13, S14, S15, S16, S17, S18, S2, S3, S4, S5, S6, S7, S8, S9",Hotswap_MX_1.00u_reversible_18.5mm,18,Keyswitch,
+SW1,SW_Vertical_Slide_5mm,1,SW_SPDT_312,
+U1,Promicro_nrf52840,1,Promicro_NRF52840,
