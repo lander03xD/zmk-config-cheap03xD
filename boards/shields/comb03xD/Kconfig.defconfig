@@ -1,8 +1,8 @@
-if SHIELD_CHEAP03XD_LEFT
+if SHIELD_COMB03XD_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Cheap03xD"
+    default "Comb03xD"
 
 #currently central is the left side
 config ZMK_SPLIT_ROLE_CENTRAL
@@ -10,7 +10,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CHEAP03XD_LEFT || SHIELD_CHEAP03XD_RIGHT
+if SHIELD_COMB03XD_LEFT || SHIELD_COMB03XD_RIGHT
 
 config ZMK_SPLIT
     default y
