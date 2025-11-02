@@ -1,0 +1,7 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_CHEAP03XD_LEFT
+    def_bool $(shields_list_contains,cheap03xD_left)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_CHEAP03XD_RIGHT
+    def_bool $(shields_list_contains,cheap03xD_right)
