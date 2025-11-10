@@ -8,16 +8,16 @@
 #define NAVI 2
 #define CONF 3
 
-// tap dance behaviour
+
+&sk {
+    quick-release;
+    lazy;
+};
 
 / {  
 
-    &sk {
-        quick-release;
-        lazy;
-    };
-
     behaviors {
+	// tap dance behaviour
         td_symbols: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
