@@ -16,6 +16,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            lazy;
             bindings = <&kp DOT>, <&kp COMMA>, <&kp QUESTION>, <&kp EXCLAMATION>;
         };
         
@@ -23,7 +24,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&os LSFT>, <&os LCTL>, <&os LALT>, <&os LGUI>;
+            lazy;
+            bindings = <&sk LSFT>, <&sk LCTL>, <&sk LALT>, <&sk LGUI>;
         };
     };
     
