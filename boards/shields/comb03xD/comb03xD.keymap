@@ -11,6 +11,22 @@
 // tap dance behaviour
 
 / {  
+    behaviors {
+        td_symbols: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp DOT>, <&kp COMMA>, <&kp QUESTION>, <&kp EXCLAMATION>;
+        };
+        
+        td_mods: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&os LSFT>, <&os LCTL>, <&os LALT>, <&os LGUI>;
+        };
+    };
+    
     combos {
         compatible = "zmk,combos";
         //Todo: clean up the brainfarts of a mad man
@@ -41,19 +57,19 @@
         combo_1235 {
             timeout-ms = <150>;
             key-positions = <20 21 22 31>;
-            bindings = <&kp DOT>;
+            bindings = <&td_mods>;
         };
                 
         combo_1245 {
             timeout-ms = <150>;
             key-positions = <20 21 23 31>;
-            bindings = <&kp Z>;
+            bindings = <&td_symbols>;
         };
                 
         combo_1345 {
             timeout-ms = <150>;
             key-positions = <20 22 23 31>;
-            bindings = <&kp QUESTION>;
+            bindings = <&kp Z>;
         };
                 
         combo_2345 {
