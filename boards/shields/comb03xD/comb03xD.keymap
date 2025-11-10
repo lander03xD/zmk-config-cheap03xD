@@ -11,6 +11,12 @@
 // tap dance behaviour
 
 / {  
+
+    &sk {
+        quick-release;
+        lazy;
+    };
+
     behaviors {
         td_symbols: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
