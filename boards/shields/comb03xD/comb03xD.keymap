@@ -20,28 +20,28 @@
         td_symbols: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <800>;
+            tapping-term-ms = <500>;
             bindings = <&kp DOT>, <&kp COMMA>, <&kp QUESTION>, <&kp EXCLAMATION>;
         };
         
         td_mods: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <800>;
+            tapping-term-ms = <500>;
             bindings = <&sk LSFT>, <&sk LCTL>, <&sk LALT>, <&sk LGUI>;
         };
         
         td_nums_low: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <800>;
+            tapping-term-ms = <500>;
             bindings = <&kp N0>, <&kp N1>, <&kp N2>, <&kp N3>, <&kp N4>;
         };
         
         td_nums_high: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <800>;
+            tapping-term-ms = <500>;
             bindings = <&kp N5>, <&kp N6>, <&kp N7>, <&kp N8>, <&kp N9>;
         };
     };
