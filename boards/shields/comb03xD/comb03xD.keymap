@@ -4,9 +4,7 @@
 #include <dt-bindings/zmk/behaviors.h>
 
 #define BASE 0
-#define SYMB 1
-#define NAVI 2
-#define CONF 3
+#define TAPD 1
 
 
 &sk {
@@ -30,6 +28,20 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&sk LSFT>, <&sk LCTL>, <&sk LALT>, <&sk LGUI>;
+        };
+        
+        td_nums_low: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N0>, <&kp N1>, <&kp N2>, <&kp N3>, <&kp N4>;
+        };
+        
+        td_nums_high: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N5>, <&kp N6>, <&kp N7>, <&kp N8>, <&kp N9>;
         };
     };
     
@@ -63,13 +75,13 @@
         combo_1235 {
             timeout-ms = <150>;
             key-positions = <20 21 22 31>;
-            bindings = <&td_mods>;
+            bindings = <&sk LSFT>;
         };
                 
         combo_1245 {
             timeout-ms = <150>;
             key-positions = <20 21 23 31>;
-            bindings = <&td_symbols>;
+            bindings = <&tog TAPD>;
         };
                 
         combo_1345 {
@@ -229,6 +241,24 @@
                 &none    &none    &none    &none    &none              
                   
                 &none    &kp A    &none                  
+                &none    &none    &none
+
+            >;
+        };
+        
+        tapdance_layer { // Tapdance Layer
+            display-name = "Base";
+            bindings = <
+                &none    &none    &none    &none    &none                   
+                &none    &none    &none    &none    &none
+                
+                &none    &none    &none    &none    &none                   
+                &none    &none    &none    &none    &none
+                
+                &td_nums_low    &td_nums_high    &td_symbols    &td_mods      &none   
+                &none    &none    &none    &none    &none              
+                  
+                &none    &to BASE    &none                  
                 &none    &none    &none
 
             >;
