@@ -16,29 +16,33 @@ config ZMK_SPLIT
     default y
     
 #sleep settings
+#Idle
+config ZMK_IDLE_TIMEOUT
+    default 20000
+
+#Deep sleep
 config ZMK_SLEEP
     default y
 
 config ZMK_IDLE_SLEEP_TIMEOUT
-    default 120000
+    default 300000
 
 #BLE settings
 config ZMK_BLE_EXPERIMENTAL_CONN
     default y
 
-    
 #zephyr ble settings
 config BT_PERIPHERAL_PREF_TIMEOUT
-    default 600
+    default 800
     
 config BT_PERIPHERAL_PREF_MIN_INT
-    default 12
+    default 48
     
 config BT_PERIPHERAL_PREF_MAX_INT
-    default 24
+    default 80
     
 config BT_PERIPHERAL_PREF_LATENCY
-    default 30
+    default 5
 
 endif
 	

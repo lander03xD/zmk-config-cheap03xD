@@ -1,0 +1,7 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"BT1_2, BT1",SbM-9202_14250_battery_holder,2,Battery_Cell,
+"D1_2, D1, D2_2, D2, D3_2, D3, D4_2, D4, D5_2, D5",Diode_DO-35,10,Diode,
+"MOUSE-BITE-2MM-SLOT_4, MOUSE-BITE-2MM-SLOT_3, MOUSE-BITE-2MM-SLOT_2, MOUSE-BITE-2MM-SLOT",mouse-bite-2mm-slot,4,VAL**,
+"S1_2, S1, S2_2, S2, S3_2, S3, S4_2, S4, S5_2, S5",Hotswap_MX_1.00u_reversible_18.5mm,10,Keyswitch,
+"SW1_2, SW1",SW_Vertical_Slide_5mm,2,SW_SPDT_312,
+"U1_2, U1",Promicro_nrf52840,2,Promicro_NRF52840,
