@@ -37,7 +37,7 @@
             bindings = <&kp N0>, <&kp N1>, <&kp N2>, <&kp N3>, <&kp N4>;
         };
         
-        td_nums_high: tap_dance_3 {
+        td_nums_high: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
