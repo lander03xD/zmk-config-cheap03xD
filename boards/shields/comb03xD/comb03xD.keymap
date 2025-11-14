@@ -44,6 +44,13 @@
             tapping-term-ms = <500>;
             bindings = <&kp N5>, <&kp N6>, <&kp N7>, <&kp N8>, <&kp N9>;
         };
+        
+        td_config: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&to BASE>, <&bt BT_CLR_ALL>, <&to BASE>;
+        };
     };
     
     combos {
@@ -262,7 +269,7 @@
                 &td_nums_low    &td_nums_high    &td_symbols    &td_mods      &none   
                 &none    &none    &none    &none    &none              
                   
-                &none    &to BASE    &none                  
+                &none    &td_config    &none                  
                 &none    &none    &none
 
             >;
