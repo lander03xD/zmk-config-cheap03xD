@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp LSFT>, <&kp N2>; //todo this should become caps lock
+            bindings = <&kp LSFT>, <&kp CAPS>; 
         };
         
         mt: mod_tap {
