@@ -56,17 +56,17 @@
         combo_CTRL_C {
             timeout-ms = <150>;
             key-positions = <21 22>;
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LC(I)>;
         };
         combo_CTRL_V {
             timeout-ms = <150>;
             key-positions = <22 23>;
-            bindings = <&kp LC(V)>;
+            bindings = <&kp LC(DOT)>;
         };
         combo_CTRL_X {
             timeout-ms = <150>;
             key-positions = <23 24>;
-            bindings = <&kp LC(X)>;
+            bindings = <&kp LC(B)>;
         };
         combo_LCTRL {
             timeout-ms = <150>;
