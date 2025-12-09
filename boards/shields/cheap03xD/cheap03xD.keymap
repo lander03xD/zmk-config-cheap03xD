@@ -19,9 +19,64 @@
             key-positions = <30 32>;
             bindings = <&mo CONF>;
         };
+        
+        combo_enter {
+            timeout-ms = <150>;
+            key-positions = <7 8>;
+            bindings = <&kp ENTER>;
+        };
+        combo_backspace {
+            timeout-ms = <150>;
+            key-positions = <8 9>;
+            bindings = <&kp BACKSPACE>;
+        };
+        
+        combo_LGUI {
+            timeout-ms = <150>;
+            key-positions = <20 21>;
+            bindings = <&kp LGUI>;
+        };
+        
+        combo_LALT {
+            timeout-ms = <150>;
+            key-positions = <28 29>;
+            bindings = <&kp LALT>;
+        };
+        
+        combo_CTRL_C {
+            timeout-ms = <150>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(C)>;
+        };
+        combo_CTRL_V {
+            timeout-ms = <150>;
+            key-positions = <22 23>;
+            bindings = <&kp LC(V)>;
+        };
+        combo_CTRL_V {
+            timeout-ms = <150>;
+            key-positions = <23 24>;
+            bindings = <&kp LC(X)>;
+        };
+        combo_LCTRL {
+            timeout-ms = <150>;
+            key-positions = <13 14>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_RCTRL {
+            timeout-ms = <150>;
+            key-positions = <15 16>;
+            bindings = <&kp RCTRL>;
+        };
     };
     
     behaviors {
+    	td_shift: tap_dance_shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp shift>, <&kp CAPSLOCK>;
+        };
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -50,8 +105,7 @@
                 &kp N    &kp M    &kp COMMA    &kp DOT    &mt LALT  SLASH
                 
                 &mo NAVI     &mo SYMB      &mt LCTRL TAB    
-                &kp LSHFT    &kp SPACE     &mt LCTRL RET
-
+                &td_shift    &kp SPACE     &mt LCTRL RET
             >;
         };
 
@@ -93,14 +147,14 @@
         config_layer { //layer 3
             display-name = "Config";
             bindings = <
-                &bootloader    &studio_unlock    &none    &bt BT_DISC 0    &bt BT_SEL 0        
-                &none          &none             &none    &none    &bootloader  
+                &bootloader    &studio_unlock    &none    &none    &bt BT_SEL 0        
+                &bt BT_DISC 0          &none             &none    &none    &bootloader  
 
-                &bt BT_CLR_ALL    &none    &none    &bt BT_DISC 1    &bt BT_SEL 1         
-                &none    &none    &none    &none    &none   
+                &bt BT_CLR_ALL    &none    &none    &none    &bt BT_SEL 1         
+                &bt BT_DISC 1    &none    &none    &none    &none   
 
-                &bt BT_CLR    &none    &none    &bt BT_DISC 2    &bt BT_SEL 2       
-                &none         &none    &none    &none    &none   
+                &bt BT_CLR    &none    &none    &none   &bt BT_SEL 2       
+                &bt BT_DISC 2          &none    &none    &none    &none   
 
                 &none   &none    &none 
                 &none   &none    &none               
