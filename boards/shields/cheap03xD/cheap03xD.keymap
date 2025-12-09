@@ -25,7 +25,7 @@
             key-positions = <0 1>;
             bindings = <&kp ESCAPE>;
         };
-        combo_esc {
+        combo_tab {
             timeout-ms = <150>;
             key-positions = <1 2>;
             bindings = <&kp TAB>;
