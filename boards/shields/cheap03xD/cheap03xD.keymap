@@ -20,6 +20,16 @@
             bindings = <&mo CONF>;
         };
         
+        combo_esc {
+            timeout-ms = <150>;
+            key-positions = <0 1>;
+            bindings = <&kp ESCAPE>;
+        };
+        combo_esc {
+            timeout-ms = <150>;
+            key-positions = <1 2>;
+            bindings = <&kp TAB>;
+        };
         combo_enter {
             timeout-ms = <150>;
             key-positions = <7 8>;
@@ -75,7 +85,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp LSFT>, <&kp CAPS>;
+            bindings = <&kp LSFT>, <&kp N2>; //todo this should become caps lock
         };
         
         mt: mod_tap {
