@@ -74,9 +74,10 @@
     	td_shift: tap_dance_shift {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp shift>, <&kp CAPSLOCK>;
+            tapping-term-ms = <500>;
+            bindings = <&kp LSFT>, <&kp CAPS>;
         };
+        
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
