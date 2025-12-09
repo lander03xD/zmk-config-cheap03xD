@@ -53,7 +53,7 @@
             key-positions = <22 23>;
             bindings = <&kp LC(V)>;
         };
-        combo_CTRL_V {
+        combo_CTRL_X {
             timeout-ms = <150>;
             key-positions = <23 24>;
             bindings = <&kp LC(X)>;
